@@ -78,3 +78,60 @@ html, body {
     outline: none;
     font-size: 14px;
 }
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+
+.product {
+    position: relative;
+    width: 25%;
+    margin: 20px;
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ffbf00;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.info {
+    padding: 10px;
+}
+
+.title {
+    margin: 0;
+}
+
+.price {
+    color: #666;
+}
+
+.rating {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    background-color: #ffbf00;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    margin-right: 5px;
+}
+
+h1 {
+    font-size: 30px;
+}
