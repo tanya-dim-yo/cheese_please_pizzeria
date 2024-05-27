@@ -81,11 +81,11 @@ h1 {
 
 .footer-section ul li a {
     text-decoration: none; /* Remove underline */
-    color: #333; /* Dark grey text */
+    color: white; /* Dark grey text */
 }
 
 .footer-section ul li a:hover {
-    color: #ffa500; /* Orange text on hover */
+    color: orangered; /* Orange text on hover */
 }
 
 .footer-section form input[type="email"] {
@@ -159,7 +159,7 @@ h1 {
 }
 
 .footer-section a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .footer-section form {
@@ -238,7 +238,7 @@ a {
 .info a:hover,
 .info a:visited:hover,
 a:hover {
-    color: darkorange;
+    color: orangered;
     text-decoration: none;
 }
 
