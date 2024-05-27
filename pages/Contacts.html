@@ -3,9 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="selection">
+    <meta name="keywords" content="pizza, pizzeria, cheese-please, cheese, please, cheeseplease, delicious, ">
+    <meta name="description" content="Pizzeria">
+    <meta name="author" content="Tanya Yordanova">
     <title>Контакти</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="../styles/site.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
 </head>
 <body>
-    
+    <header class="header sticky-top">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logo.jpg" alt="Logo"></a>
+                <!-- Vecteezy.com -->
+            </div>
+            <nav class="navbar">
+                <ul class="navbar-menu">
+                    <li><a href="../index.html">Начало</a></li>
+                    <li><a href="../pages/menu.html">Меню</a></li>
+                    <li><a href="../pages/blog.html">Блог</a></li>
+                    <li><a href="../pages/contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contact-info">
+        <div class="info-item">
+            <img src="address_icon.png" alt="Address Icon">
+            <p>123 Main Street, City, Country</p>
+        </div>
+        <div class="info-item">
+            <img src="phone_icon.png" alt="Phone Icon">
+            <p>+123 456 7890</p>
+        </div>
+        <div class="info-item">
+            <img src="email_icon.png" alt="Email Icon">
+            <p>info@example.com</p>
+        </div>
+        <div class="info-item">
+            <img src="time_icon.png" alt="Time Icon">
+            <p>Mon - Fri: 9am - 6pm</p>
+        </div>
+    </section>
+
+    <section class="reservation">
+        <h2>Make a Reservation</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" required>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment"></textarea>
+            </div>
+            <button type="submit">Reserve</button>
+        </form>
+    </section>
+    <footer class="footer footer-bottom">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <p>Адрес: ул. Оборище 12, София, България</p>
+                <p>Телефон: +359 888 123 456</p>
+                <p>Email: info@cheeseplease.bg</p>
+            </div>
+            <div class="footer-section">
+                <h3>Главни връзки</h3>
+                <ul>
+                    <li><a href="/index.html">Начало</a></li>
+                    <li><a href="./pages/menu.html">Меню</a></li>
+                    <li><a href="./pages/blog.html">Блог</a></li>
+                    <li><a href="./pages/contacts.html">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Социални мрежи</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Абонирай се за нашия бюлетин</h3>
+                <form>
+                    <input type="email" placeholder="Въведи своя email">
+                    <button type="submit">Абонирай се</button>
+                </form>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
