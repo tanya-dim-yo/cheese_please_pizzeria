@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
-/* Resetting default margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Common styles */
 html, body {
     margin: 0;
     padding: 0;
@@ -40,84 +38,84 @@ h1 {
 }
 
 .footer {
-    background-color: #f8f8f8; /* Light grey background */
-    padding: 20px 0; /* Padding for the footer */
+    background-color: #f8f8f8;
+    padding: 20px 0;
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-around; /* Distribute elements evenly */
-    align-items: flex-start; /* Align items at the top */
-    max-width: 1200px; /* Maximum width for the container */
-    margin: 0 auto; /* Center the container */
-    flex-wrap: wrap; /* Wrap items on small screens */
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .footer-section {
-    flex: 1; /* Take equal space */
-    min-width: 200px; /* Minimum width for each section */
-    margin: 10px; /* Margin around each section */
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
 }
 
 .footer-section h3 {
-    margin-top: 0; /* Remove top margin */
-    font-size: 16px; /* Smaller font size */
+    margin-top: 0;
+    font-size: 16px;
 }
 
 .footer-section p,
 .footer-section ul,
 .footer-section form {
-    font-size: 14px; /* Smaller font size for text */
+    font-size: 14px;
 }
 
 .footer-section ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 .footer-section ul li {
-    margin-bottom: 5px; /* Space between list items */
+    margin-bottom: 5px;
 }
 
 .footer-section ul li a {
-    text-decoration: none; /* Remove underline */
-    color: white; /* Dark grey text */
+    text-decoration: none;
+    color: white;
 }
 
 .footer-section ul li a:hover {
-    color: orangered; /* Orange text on hover */
+    color: orangered;
 }
 
 .footer-section form input[type="email"] {
-    padding: 5px; /* Padding for email input */
-    margin-right: 5px; /* Margin right for spacing */
-    border: 1px solid #ccc; /* Border for input */
-    border-radius: 3px; /* Rounded corners for input */
-    font-size: 14px; /* Font size for input */
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
 }
 
 .footer-section form button {
-    padding: 5px 10px; /* Padding for button */
-    background-color: #ffa500; /* Orange background */
-    color: white; /* White text */
-    border: none; /* No border */
-    border-radius: 3px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor */
+    padding: 5px 10px;
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 .footer-section form button:hover {
-    background-color: #ff8c00; /* Darker orange on hover */
+    background-color: #ff8c00;
 }
 
 @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column; /* Stack elements vertically on small screens */
-        align-items: center; /* Center align items */
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer-section {
-        min-width: unset; /* Remove minimum width on small screens */
-        text-align: center; /* Center text on small screens */
+        min-width: unset;
+        text-align: center;
     }
 }
 
@@ -242,7 +240,6 @@ a:hover {
     text-decoration: none;
 }
 
-/* Image container */
 .image-container {
     position: relative;
     display: flex;
@@ -282,12 +279,10 @@ a:hover {
     font-size: 14px;
 }
 
-/* Product container */
-
 .product-details-row {
     display: flex;
-    justify-content: space-between; /* Distribute space evenly between child elements */
-    align-items: center; /* Center align items vertically */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .info, .rating {
@@ -296,7 +291,7 @@ a:hover {
 }
 
 .info .title {
-    margin-right: 10px; /* Add some space between the title and price */
+    margin-right: 10px;
 }
 
 .rating {
@@ -305,7 +300,7 @@ a:hover {
 }
 
 .rating span {
-    margin-right: 5px; /* Add some space between the rating number and the star */
+    margin-right: 5px;
 }
 
 .product-container {
@@ -375,27 +370,27 @@ a:hover {
 
 .product-details {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: flex-start; /* Align children to the start (left) */
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .info {
-    width: 100%; /* Ensure the info div takes full width */
+    width: 100%;
 }
 
 .title {
-    margin-bottom: 10px; /* Space between title and details row */
+    margin-bottom: 10px;
 }
 
 .details-row {
     display: flex;
-    justify-content: space-between; /* Distribute space between price and rating */
-    align-items: center; /* Center align items vertically */
-    width: 100%; /* Ensure the details row takes full width */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .price {
-    margin-right: 10px; /* Space between price and rating */
+    margin-right: 10px;
 }
 
 .rating {
@@ -404,7 +399,7 @@ a:hover {
 }
 
 .rating span {
-    margin-right: 5px; /* Space between rating number and star */
+    margin-right: 5px;
 }
 
 ul {
@@ -459,20 +454,20 @@ ul li img {
 }
 
 .buy-button {
-    background-color: #FFA500; /* Orange background */
-    color: white; /* White text */
-    border: none; /* No border */
-    border-radius: 15px; /* Rounded corners */
-    padding: 10px 30px; /* Padding for the button */
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 30px;
     margin: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Transition effect for background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .buy-button:hover {
-    background-color: #ff8c00; /* Darker orange on hover */
+    background-color: #ff8c00;
 }
 
 
@@ -492,7 +487,7 @@ footer .footer-section {
     margin-bottom: 20px;
 }
 
-/* blog */
+/* blog start*/
 
 .blog-section {
     padding: 40px 0;
@@ -651,6 +646,20 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: darkorange;
+}
+
+.image-before-contacts {
+    text-align: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 20vh;
+}
+
+.image-before-contacts img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* contacts end */
