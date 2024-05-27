@@ -608,6 +608,10 @@ footer .footer-section {
     margin-left: 10px;
 }
 
+.info-content a {
+    color: white;
+}
+
 .reservation {
     margin-top: 50px;
     text-align: center;
