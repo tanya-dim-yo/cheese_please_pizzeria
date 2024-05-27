@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
-/* main section start*/
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Common styles */
 html, body {
     margin: 0;
     padding: 0;
@@ -11,10 +17,177 @@ html, body {
     font-size: 16px;
 }
 
-.header {
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #ffbf00;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.header, header {
     background-color: white;
-    padding: 5px 50px;
+    padding: 20px;
+    text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.footer {
+    background-color: #f8f8f8; /* Light grey background */
+    padding: 20px 0; /* Padding for the footer */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* Distribute elements evenly */
+    align-items: flex-start; /* Align items at the top */
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    flex-wrap: wrap; /* Wrap items on small screens */
+}
+
+.footer-section {
+    flex: 1; /* Take equal space */
+    min-width: 200px; /* Minimum width for each section */
+    margin: 10px; /* Margin around each section */
+}
+
+.footer-section h3 {
+    margin-top: 0; /* Remove top margin */
+    font-size: 16px; /* Smaller font size */
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section form {
+    font-size: 14px; /* Smaller font size for text */
+}
+
+.footer-section ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-section ul li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+.footer-section ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark grey text */
+}
+
+.footer-section ul li a:hover {
+    color: #ffa500; /* Orange text on hover */
+}
+
+.footer-section form input[type="email"] {
+    padding: 5px; /* Padding for email input */
+    margin-right: 5px; /* Margin right for spacing */
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 3px; /* Rounded corners for input */
+    font-size: 14px; /* Font size for input */
+}
+
+.footer-section form button {
+    padding: 5px 10px; /* Padding for button */
+    background-color: #ffa500; /* Orange background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.footer-section form button:hover {
+    background-color: #ff8c00; /* Darker orange on hover */
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center; /* Center align items */
+    }
+
+    .footer-section {
+        min-width: unset; /* Remove minimum width on small screens */
+        text-align: center; /* Center text on small screens */
+    }
+}
+
+
+.footer, footer {
+    background-color: #ffbf00;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 20px;
+    margin: 60px 0 0;
+}
+
+.footer-section {
+    margin: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section input[type="email"], input[type="email"], button {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.footer-section input[type="email"], input[type="email"] {
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.footer-section button, button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-section button:hover, button:hover {
+    background-color: #555;
 }
 
 .sticky-top {
@@ -25,14 +198,18 @@ html, body {
 
 .container {
     display: flex;
-    padding: 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo img {
-    height: 80px;
-    width: auto;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
 }
 
 .navbar-menu {
@@ -46,15 +223,25 @@ html, body {
     margin-left: 10px;
 }
 
-.navbar-menu li a {
-    color: rgb(109, 108, 108);
+.navbar-menu li a,
+.navbar-menu li a:visited,
+.navbar-menu li a:hover,
+.info a,
+.info a:visited,
+a {
+    color: orange;
     text-decoration: none;
 }
 
-.navbar-menu li a:hover {
-    color: orange;
+.navbar-menu li a:hover,
+.info a:hover,
+.info a:visited:hover,
+a:hover {
+    color: darkorange;
+    text-decoration: none;
 }
 
+/* Image container */
 .image-container {
     position: relative;
     display: flex;
@@ -94,9 +281,12 @@ html, body {
     font-size: 14px;
 }
 
+/* Product container */
 .product-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     padding: 0 40px;
 }
 
@@ -104,6 +294,34 @@ html, body {
     position: relative;
     width: 25%;
     margin: 20px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    opacity: 0.7;
+    margin-top: 20px;
+}
+
+.info, .product-info {
+    padding: 10px;
+}
+
+.info h3.title, .product-info h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.info span.price, .price, .rating {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #666;
 }
 
 .label {
@@ -116,29 +334,6 @@ html, body {
     border-radius: 5px;
 }
 
-.product img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.info {
-    padding: 10px;
-}
-
-.title {
-    margin: 0;
-}
-
-.price {
-    color: #666;
-}
-
-.rating {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-
 .star {
     width: 20px;
     height: 20px;
@@ -147,85 +342,92 @@ html, body {
     margin-right: 5px;
 }
 
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 36px;
-    color: #ffbf00;
-    text-align: center;
-    margin: 20px 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-}
-
-/* main section end*/
-
-/* footer section start*/
-
-.footer {
-    background-color: #ffbf00;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    border-radius: 20px;
-    margin: 60px;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.footer-section {
-    margin: 20px;
-}
-
-.footer-section h3 {
+.product-options h2, h2, h3 {
+    font-size: 20px;
     margin-bottom: 10px;
     color: #333;
 }
 
-.footer-section p,
-.footer-section ul,
-.footer-section li {
-    margin: 5px 0;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-.footer-section a {
-    color: white;
-    text-decoration: none;
+ul li {
+    margin: 10px 0;
+    font-size: 16px;
 }
 
-.footer-section a:hover {
-    text-decoration: underline;
+ul li img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
 }
 
-.footer-section form {
+.size-options, .crust-options, .extras, .product-details {
+    margin-bottom: 20px;
+}
+
+.product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-details {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
-.footer-section input[type="email"] {
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 14px;
+.product-image {
+    width: 50%;
 }
 
-.footer-section button {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
+.product-info {
+    flex: 1;
+    padding: 0 20px;
+    margin-left: 20px;
 }
 
-.footer-section button:hover {
-    background-color: #555;
+.rounded-image {
+    border-radius: 5%;
+    width: 800px;
+    height: 800px;
 }
 
-/* footer section end*/
+.buy-button {
+    background-color: #FFA500; /* Orange background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition effect for background color */
+}
+
+.buy-button:hover {
+    background-color: #ff8c00; /* Darker orange on hover */
+}
+
+
+.options {
+    margin-top: 50px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+footer .footer-section {
+    margin-bottom: 20px;
+}
