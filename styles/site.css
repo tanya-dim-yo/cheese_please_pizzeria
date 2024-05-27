@@ -29,6 +29,7 @@ h1 {
     text-align: center;
     margin: 20px 0;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    font-size: 30px;
 }
 
 .header, header {
@@ -282,6 +283,31 @@ a:hover {
 }
 
 /* Product container */
+
+.product-details-row {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between child elements */
+    align-items: center; /* Center align items vertically */
+}
+
+.info, .rating {
+    display: flex;
+    align-items: center;
+}
+
+.info .title {
+    margin-right: 10px; /* Add some space between the title and price */
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating span {
+    margin-right: 5px; /* Add some space between the rating number and the star */
+}
+
 .product-container {
     display: flex;
     flex-wrap: wrap;
@@ -305,7 +331,6 @@ a:hover {
     width: 100%;
     height: auto;
     max-width: 100%;
-    opacity: 0.7;
     margin-top: 20px;
 }
 
@@ -315,7 +340,7 @@ a:hover {
 
 .info h3.title, .product-info h1 {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .info span.price, .price, .rating {
@@ -345,7 +370,41 @@ a:hover {
 .product-options h2, h2, h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #333;
+    color: orange;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align children to the start (left) */
+}
+
+.info {
+    width: 100%; /* Ensure the info div takes full width */
+}
+
+.title {
+    margin-bottom: 10px; /* Space between title and details row */
+}
+
+.details-row {
+    display: flex;
+    justify-content: space-between; /* Distribute space between price and rating */
+    align-items: center; /* Center align items vertically */
+    width: 100%; /* Ensure the details row takes full width */
+}
+
+.price {
+    margin-right: 10px; /* Space between price and rating */
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating span {
+    margin-right: 5px; /* Space between rating number and star */
 }
 
 ul {
@@ -384,6 +443,7 @@ ul li img {
 
 .product-image {
     width: 50%;
+    margin-left: 30px;
 }
 
 .product-info {
@@ -403,7 +463,8 @@ ul li img {
     color: white; /* White text */
     border: none; /* No border */
     border-radius: 15px; /* Rounded corners */
-    padding: 10px 20px; /* Padding for the button */
+    padding: 10px 30px; /* Padding for the button */
+    margin: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
     font-size: 16px; /* Font size */
     cursor: pointer; /* Pointer cursor on hover */
@@ -420,7 +481,6 @@ ul li img {
 }
 
 main {
-    padding: 20px;
     text-align: center;
 }
 
