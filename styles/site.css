@@ -313,7 +313,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 40px;
+    padding: 0px 40px;
 }
 
 .product {
@@ -332,6 +332,10 @@ a:hover {
     height: auto;
     max-width: 100%;
     margin-top: 20px;
+}
+
+.info {
+    width: 100%;
 }
 
 .info, .product-info {
@@ -377,10 +381,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-
-.info {
-    width: 100%;
 }
 
 .title {
