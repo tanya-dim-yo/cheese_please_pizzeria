@@ -671,3 +671,103 @@ button[type="submit"]:hover {
 }
 
 /* contacts end */
+
+/* article start */
+
+.articleContainer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.article-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.article-meta span {
+    font-size: 14px;
+    color: #555;
+}
+.article-text {
+    margin-bottom: 20px;
+}
+.article-text p {
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.article-text h1{
+    color: orange;
+    font-weight: 800;
+    padding-top: 10px;
+}
+.article-text h3{
+    font-weight: 800;
+    padding-top: 20px;
+}
+
+
+.share-section {
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.share-buttons {
+    display: flex;
+    gap: 10px;
+}
+.share-buttons a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: orange;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.share-buttons a:hover {
+    background-color: orangered;
+}
+.comment-form {
+    margin-top: 20px;
+}
+.comment-form input, .comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.comment-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.comment-form button:hover {
+    background-color: orangered;
+}
+
+/* article end */
