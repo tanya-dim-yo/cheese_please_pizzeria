@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../styles/site.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="../js/menu.js" defer></script>
 </head>
 <body>
     <header class="header sticky-top">
@@ -30,5 +31,108 @@
             </nav>
         </div>
     </header>
+
+    <h1>Меню</h1>
+    <div class="product-container">
+        <div class="product">
+            <a href="./margheritaPizza.html"><img src="../images/menu/pizza/margherita.jpg" alt="Пица Маргарита"></a>
+            <div class="product-details">
+                <div class="info">
+                    <a href="./margheritaPizza.html"><h3 class="title">Маргарита</h3></a>
+                    <div class="details-row">
+                        <div class="price">12.00 лв.</div>
+                        <div class="rating">
+                            <span>4.5</span>
+                            <div class="star"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="purchase-box">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+                    <button class="buy-btn">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <a href="./pepperoniPizza.html"><img src="../images/menu/pizza/pepperoni.jpg" alt="Пица Пеперони"></a>
+            <div class="product-details">
+                <div class="info">
+                    <a href="./pepperoniPizza.html"><h3 class="title">Пеперони</h3></a>
+                    <div class="details-row">
+                        <div class="price">14.00 лв.</div>
+                        <div class="rating">
+                            <span>4.0</span>
+                            <div class="star"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="purchase-box">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+                    <button class="buy-btn">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <a href="./hawaiianPizza.html"><img src="../images/menu/pizza/hawaiian.jpg" alt="Хавайска пица"></a>
+            <div class="product-details">
+                <div class="info">
+                    <a href="./hawaiianPizza.html"><h3 class="title">Хавайска</h3></a>
+                    <div class="details-row">
+                        <div class="price">13.00 лв.</div>
+                        <div class="rating">
+                            <span>4.2</span>
+                            <div class="star"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="purchase-box">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+                    <button class="buy-btn">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="footer footer-bottom">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <p>Адрес: ул. Оборище 12, София, България</p>
+                <p>Телефон: +359 888 123 456</p>
+                <p>Email: info@cheeseplease.bg</p>
+            </div>
+            <div class="footer-section">
+                <h3>Главни връзки</h3>
+                <ul>
+                    <li><a href="/index.html">Начало</a></li>
+                    <li><a href="./pages/menu.html">Меню</a></li>
+                    <li><a href="./pages/blog.html">Блог</a></li>
+                    <li><a href="./pages/contacts.html">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Социални мрежи</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Абонирай се за нашия бюлетин</h3>
+                <form>
+                    <input type="email" placeholder="Въведи своя email">
+                    <button type="submit">Абонирай се</button>
+                </form>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

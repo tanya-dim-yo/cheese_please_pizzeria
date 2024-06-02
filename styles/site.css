@@ -576,7 +576,6 @@ footer .footer-section {
     background-color: #e67e00;
 }
 
-
 /* blog end */
 
 /* contacts start */
@@ -799,3 +798,77 @@ button[type="submit"]:hover {
 }
 
 /* article end */
+
+/* menu start */
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.product-details {
+    padding: 10px;
+}
+
+.purchase-box {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.quantity-btn {
+    background-color: white;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: orange;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.quantity-btn:hover {
+    background-color: orange;
+    color: white;
+}
+
+.quantity-input {
+    width: 30px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+}
+
+.buy-btn {
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: darkorange;
+}
+
+/* menu end */
